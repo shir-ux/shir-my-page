@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "my-page",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        "-c",
+        "import os, functools; os.chdir('/Users/shirsharvit/Documents/shir-agents-bootcamp/my-page'); from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler; H = functools.partial(SimpleHTTPRequestHandler, directory='/Users/shirsharvit/Documents/shir-agents-bootcamp/my-page'); ThreadingHTTPServer(('127.0.0.1', 8000), H).serve_forever()"
+      ],
+      "port": 8000
+    }
+  ]
+}
